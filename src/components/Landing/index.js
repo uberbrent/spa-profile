@@ -2,7 +2,7 @@ import React from 'react';
 
 function Landing() {
 return(
-    <section>
+    <section id="landingHero">
         Hello, world!
     </section>
 )   
