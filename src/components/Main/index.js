@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import Landing from '../Landing';
 import Nav from '../Nav';
+import About from '../About';
+import Portfolio from '../Portfolio';
+import Contact from '../Contact';
+import Resume from '../Resume';
 
 function Main() {
 
@@ -27,7 +31,15 @@ function Main() {
         }
     }
     return (
-        <div></div>
+        <main>
+            <Nav
+                categories={categories}
+                currentCategory={currentCategory}
+                setCurrentCategory={setCurrentCategory}
+            >    
+            </Nav>
+            {renderPage(currentCategory)}
+        </main>
     )
 }
 
